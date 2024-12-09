@@ -129,6 +129,7 @@ _
 3 - Execute os scripts de criação e inserção de dados:
 
 **[@caminho_do_script/criar_tabelas.sql]**
+
 **[@caminho_do_script/inserir_dados.sql]**
 
 4 - Verifique se as tabelas foram criadas corretamente com o comando:
