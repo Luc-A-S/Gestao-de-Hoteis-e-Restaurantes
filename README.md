@@ -113,3 +113,48 @@ _
 ### 3. USR_GESTAO_HOTEL_ITENS_PEDIDO
 
 • **[PEDIDO_ID]** -> **USR_GESTAO_HOTEL_PEDIDOS**
+
+## Como Executar os Scripts no Oracle
+
+### 1. Usando o SQL*Plus
+
+> O **SQL*Plus** é uma ferramenta de linha de comando para executar comandos SQL no Oracle.
+
+1 - Abra o **SQL*Plus**.
+
+2 - Conecte-se ao banco de dados Oracle com o comando:
+
+**[CONNECT usuario/senha@banco]**
+
+3 - Execute os scripts de criação e inserção de dados:
+
+**[@caminho_do_script/criar_tabelas.sql]**
+**[@caminho_do_script/inserir_dados.sql]**
+
+4 - Verifique se as tabelas foram criadas corretamente com o comando:
+
+**[SELECT * FROM USR_GESTAO_HOTEL_CLIENTES;]**
+
+_
+
+### 2. Usando o SQL Developer
+
+> O **SQL Developer** é uma interface gráfica para trabalhar com bancos de dados Oracle.
+
+1 - Abra o **SQL Developer** e conecte-se ao banco de dados Oracle.
+
+2 - Crie uma nova conexão com as credenciais de acesso ao banco.
+
+3 - No painel de navegação, clique com o botão direito na conexão e selecione **Open SQL Worksheet**.
+
+4 - No editor de SQL, copie e cole o conteúdo dos scripts _(de criação e inserção de dados)_ e clique em **Run** _(ícone de "play")_.
+
+_
+
+### 3. Executando os Scripts
+
+• Para criar as tabelas, execute o script de criação.
+
+• Para inserir dados, execute o script de inserção.
+
+• Verifique a integridade das tabelas e dados utilizando comandos **[SELECT]** para visualizar os registros.
