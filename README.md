@@ -8,7 +8,7 @@ _Fornecer uma estrutura para o gerenciamento das operações diárias de um hote
 
 ## Estrutura
 
-#### 1. USR_GESTAO_HOTEL_CLIENTES
+### 1. USR_GESTAO_HOTEL_CLIENTES
 
 > Armazena os dados dos clientes do hotel.
 
@@ -20,7 +20,9 @@ _Fornecer uma estrutura para o gerenciamento das operações diárias de um hote
 
 • **[TELEFONE]:** Número de telefone do cliente.
 
-#### 2. USR_GESTAO_HOTEL_QUARTOS
+_
+
+### 2. USR_GESTAO_HOTEL_QUARTOS
 
 > Armazena as informações sobre os quartos do hotel.
 
@@ -32,7 +34,9 @@ _Fornecer uma estrutura para o gerenciamento das operações diárias de um hote
 
 • **[PRECO_DIARIA]:** Preço da diária do quarto.
 
-#### 3. USR_GESTAO_HOTEL_RESERVAS
+_
+
+### 3. USR_GESTAO_HOTEL_RESERVAS
 
 > Registra as reservas feitas pelos clientes para os quartos do hotel.
 
@@ -48,7 +52,9 @@ _Fornecer uma estrutura para o gerenciamento das operações diárias de um hote
 
 • **[STATUS]:** Status da reserva _(Ex: Confirmada, Cancelada)_.
 
-#### 4. USR_GESTAO_HOTEL_PEDIDOS
+_
+
+### 4. USR_GESTAO_HOTEL_PEDIDOS
 
 > Registra os pedidos feitos pelos clientes durante a estadia no hotel.
 
@@ -61,3 +67,30 @@ _Fornecer uma estrutura para o gerenciamento das operações diárias de um hote
 • **[TOTAL]:** Valor total do pedido.
 
 • **[STATUS]:** Status do pedido _(Ex: Pago, Pendente)_.
+
+_
+
+### 5. USR_GESTAO_HOTEL_ITENS_PEDIDO
+
+> Armazena os itens consumidos pelos clientes dentro de cada pedido.
+
+• **[ITEM_PEDIDO_ID]:** Identificador único do item do pedido _(Chave Primária)_.
+
+• **[PEDIDO_ID]:** Identificador do pedido _(Chave Estrangeira de USR_GESTAO_HOTEL_PEDIDOS)_.
+
+• **[NOME_ITEM]:** Nome do item _(Ex: Refrigerante, Pizza, etc.)_.
+
+• **[QUANTIDADE]:** Quantidade do item pedido.
+
+• **[PRECO_UNITARIO]:** Preço unitário do item.
+
+## Relacionamentos entre as Tabelas
+
+• _A tabela **USR_GESTAO_HOTEL_RESERVAS** faz referência à tabela **USR_GESTAO_HOTEL_CLIENTES** através da chave estrangeira **[CLIENTE_ID]**, associando cada reserva a um cliente._
+
+• _A tabela **USR_GESTAO_HOTEL_RESERVAS** também faz referência à tabela **USR_GESTAO_HOTEL_QUARTOS** através da chave estrangeira **[QUARTO_ID]**, associando a reserva a um quarto específico._
+
+• _A tabela **USR_GESTAO_HOTEL_PEDIDOS** faz referência à tabela **USR_GESTAO_HOTEL_CLIENTES** através da chave estrangeira **[CLIENTE_ID]**, associando cada pedido a um cliente._
+
+• _A tabela **USR_GESTAO_HOTEL_ITENS_PEDIDO** faz referência à tabela **USR_GESTAO_HOTEL_PEDIDOS** através da chave estrangeira **[PEDIDO_ID]**, associando cada item a um pedido específico._
+
