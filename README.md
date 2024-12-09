@@ -20,7 +20,6 @@ _Fornecer uma estrutura para o gerenciamento das operações diárias de um hote
 
 • **[TELEFONE]:** Número de telefone do cliente.
 
-
 #### 2. USR_GESTAO_HOTEL_QUARTOS
 
 > Armazena as informações sobre os quartos do hotel.
@@ -32,7 +31,6 @@ _Fornecer uma estrutura para o gerenciamento das operações diárias de um hote
 • **[TIPO]:** Tipo do quarto _(Ex: Simples, Duplo, etc.)_.
 
 • **[PRECO_DIARIA]:** Preço da diária do quarto.
-
 
 #### 3. USR_GESTAO_HOTEL_RESERVAS
 
@@ -49,7 +47,6 @@ _Fornecer uma estrutura para o gerenciamento das operações diárias de um hote
 • **[DATA_CHECKOUT]:** Data de saída do cliente.
 
 • **[STATUS]:** Status da reserva _(Ex: Confirmada, Cancelada)_.
-
 
 #### 4. USR_GESTAO_HOTEL_PEDIDOS
 
