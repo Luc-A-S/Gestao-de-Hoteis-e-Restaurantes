@@ -94,3 +94,22 @@ _
 
 • _A tabela **USR_GESTAO_HOTEL_ITENS_PEDIDO** faz referência à tabela **USR_GESTAO_HOTEL_PEDIDOS** através da chave estrangeira **[PEDIDO_ID]**, associando cada item a um pedido específico._
 
+## Diagrama
+
+### 1. USR_GESTAO_HOTEL_RESERVAS
+
+• **[CLIENTE_ID]** -> **USR_GESTAO_HOTEL_CLIENTES**
+
+• **[QUARTO_ID]** -> **USR_GESTAO_HOTEL_QUARTOS**
+
+_
+
+### 2. USR_GESTAO_HOTEL_PEDIDOS
+
+• **[CLIENTE_ID]** -> **USR_GESTAO_HOTEL_CLIENTES**
+
+_
+
+### 3. USR_GESTAO_HOTEL_ITENS_PEDIDO
+
+• **[PEDIDO_ID]** -> **USR_GESTAO_HOTEL_PEDIDOS**
